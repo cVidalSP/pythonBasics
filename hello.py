@@ -111,6 +111,61 @@ while count < 5:
      print(count)
      count += 1
 
+def my_function():
+     print("Hello from my function")
+
+def my_function_with_args(username, greeting):
+     print("Hello, %s , from my function!, I wish you %s" %(username,greeting))
+
+def sum_two_numbers(a ,b):
+     return a + b
+
+my_function()
+my_function_with_args('Pedro','Muitos dinheiros')
+sum_two_numbers(66,3)
+
+class MyClass:
+     variable = "Blah"
+
+     def function(self):
+          print("This is a message inside the class.")
+
+myobjectx = MyClass()
+myobjecty = MyClass()
+
+myobjecty.variable = "batata"
+
+print(myobjectx.variable)
+print(myobjecty.variable)
+
+myobjectx.function()
+
+phonebook = {}
+phonebook['carlos'] = 999999999
+phonebook['andreia'] = 999999998
+phonebook['joao'] = 999999997
+phonebook['leandro'] = 999999996
+
+print(phonebook)
+
+alunos = {
+     "Caina": 7,
+     "Pedro": 9,
+     "Joao": 3
+}
+
+print(alunos)
+
+for name,number in phonebook.items():
+     print("Phone number of %s is %d" %(name, number))
+
+del phonebook["joao"] 
+phonebook.pop("andreia")
+print(phonebook)
+
+
+
+
 
 
 
